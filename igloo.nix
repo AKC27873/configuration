@@ -153,6 +153,11 @@ in
    pkgs.git
    pkgs.python314
    pkgs.python313Packages.uv
+   pkgsUnstable.ruby
+   pkgs.vimPlugins.nvim-treesitter-parsers.ruby
+   pkgs.tree-sitter-grammars.tree-sitter-ruby
+   pkgs.ruby-lsp
+   pkgs.rubyfmt
    pkgs.curl
    pkgs.docker
    pkgs.docker-compose
