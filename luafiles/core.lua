@@ -216,7 +216,7 @@ return {
 				"rust",
 			},
 			highlight = { enable = true },
-			indent = { enable = true },
+			indent = { enable = true, disable = { "ruby" } },
 		},
 	},
 
