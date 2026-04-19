@@ -153,10 +153,6 @@ in
    pkgs.git
    pkgs.python314
    pkgs.python313Packages.uv
-   pkgsUnstable.ruby
-   pkgs.haskellPackages.tree-sitter-ruby
-   pkgs.ruby-lsp
-   pkgs.rubyfmt
    pkgs.curl
    pkgs.docker
    pkgs.docker-compose
