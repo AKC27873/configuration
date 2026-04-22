@@ -30,7 +30,7 @@ in
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
-  programs.neovim.enable = true;
+  # programs.neovim.enable = true;
   networking.hostName = "havoc"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
@@ -130,6 +130,7 @@ in
    pkgsUnstable.busybox
    pkgsUnstable.toybox
    pkgsUnstable.inetutils
+   pkgsUnstable.sublime4
    pkgs.openvpn
    pkgsUnstable.obsidian
    pkgsUnstable.librewolf
@@ -151,6 +152,7 @@ in
    pkgs.git
    pkgs.python314
    pkgs.python313Packages.uv
+   pkgsUnstable.ruby
    pkgsUnstable.brave
    pkgs.curl
    pkgs.docker
@@ -207,13 +209,6 @@ virtualisation.libvirtd = {
     swtpm.enable = true;
     };
   };
-
-  # Optional: leave default gateway unset if you don't know lab switch IP
-  # defaultGateway = "192.168.1.1";
-
-  # DNS servers
-  nameservers = [ "1.1.1.1" "8.8.8.8" ];
-}; 
   # Enable the OpenSSH daemon.
   services.openssh.enable = true;
 
