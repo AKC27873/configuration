@@ -30,7 +30,7 @@ in
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
-  programs.neovim.enable = true;
+  # programs.neovim.enable = true;
   networking.hostName = "igloo"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
@@ -130,6 +130,8 @@ in
    pkgsUnstable.busybox
    pkgsUnstable.toybox
    pkgsUnstable.inetutils
+   pkgsUnstable.ruby
+   pkgsUnstable.sublime4
    pkgs.openvpn
    pkgsUnstable.obsidian
    pkgsUnstable.librewolf
