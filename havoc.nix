@@ -30,7 +30,6 @@ in
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
-  # programs.neovim.enable = true;
   networking.hostName = "havoc"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
@@ -125,13 +124,14 @@ in
    pkgs.bluez
    pkgs.blueman
    pkgs.wget
-   pkgs.tree-sitter
+   pkgsUnstable.tree-sitter
    pkgsUnstable.tmux
    pkgsUnstable.busybox
    pkgsUnstable.toybox
    pkgsUnstable.inetutils
-   pkgsUnstable.sublime4
    pkgs.openvpn
+   pkgsUnstable.sublime4
+   pkgsUnstable.ruby
    pkgsUnstable.obsidian
    pkgsUnstable.librewolf
    pkgsUnstable.gcc
@@ -152,7 +152,6 @@ in
    pkgs.git
    pkgs.python314
    pkgs.python313Packages.uv
-   pkgsUnstable.ruby
    pkgsUnstable.brave
    pkgs.curl
    pkgs.docker
