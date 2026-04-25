@@ -85,12 +85,6 @@ in
     # no need to redefine it in your config for now)
     #media-session.enable = true;
   };
-  programs.neovim = {
-    enable = true;
-    defaultEditor = true;
-    viAlias = true;
-    vimAlias = true;
-  };
 
   programs.nix-ld.enable = true;
 
@@ -130,7 +124,8 @@ in
    pkgs.bluez
    pkgs.blueman
    pkgs.wget
-   pkgsUnstable.tree-sitter
+   pkgsUnstable.sublime4
+   pkgsUnstable.ruby
    pkgsUnstable.tmux
    pkgsUnstable.busybox
    pkgsUnstable.toybox

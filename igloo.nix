@@ -98,12 +98,6 @@ in
 		  nerd-fonts.ubuntu
   ];
 
-  programs.neovim = {
-    enable = true;
-    defaultEditor = true;
-    viAlias = true;
-    vimAlias = true;
-  };
 
   # Define a user account. Don't forget to set a password with 'passwd'.
   users.users.akc27 = {
@@ -136,6 +130,8 @@ in
    pkgsUnstable.toybox
    pkgsUnstable.inetutils
    pkgs.openvpn
+   pkgsUnstable.ruby
+   pkgsUnstable.sublime4
    pkgsUnstable.obsidian
    pkgsUnstable.librewolf
    pkgs.powershell
@@ -153,6 +149,7 @@ in
    pkgs.brightnessctl
    pkgs.libreoffice
    pkgs.discord
+   # pkgsUnstable.tailscale
    pkgs.unzip
    pkgs.git
    pkgs.python314
