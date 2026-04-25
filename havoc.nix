@@ -85,6 +85,12 @@ in
     # no need to redefine it in your config for now)
     #media-session.enable = true;
   };
+  programs.neovim = {
+    enable = true;
+    defaultEditor = true;
+    viAlias = true;
+    vimAlias = true;
+  };
 
   programs.nix-ld.enable = true;
 
@@ -130,8 +136,6 @@ in
    pkgsUnstable.toybox
    pkgsUnstable.inetutils
    pkgs.openvpn
-   pkgsUnstable.sublime4
-   pkgsUnstable.ruby
    pkgsUnstable.obsidian
    pkgsUnstable.librewolf
    pkgsUnstable.gcc
