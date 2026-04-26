@@ -110,6 +110,12 @@ in
     ];
   };
 
+  programs.neovim = {
+       enable = true;
+       defaultEditor = true;
+       viAlias = true;
+       vimAlias = true;
+  };
   # Install firefox.
   # programs.firefox.enable = true;
   # Allow unfree packages
@@ -129,8 +135,7 @@ in
    pkgsUnstable.toybox
    pkgsUnstable.inetutils
    pkgs.openvpn
-   pkgsUnstable.ruby
-   pkgsUnstable.sublime4
+   pkgsUnstable.tree-sitter
    pkgsUnstable.obsidian
    pkgsUnstable.librewolf
    pkgs.powershell

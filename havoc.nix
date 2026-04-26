@@ -109,6 +109,12 @@ in
      zsh
     ];
   };
+  programs.neovim = {
+       enable = true;
+       defaultEditor = true;
+       viAlias = true;
+       vimAlias = true;
+  };
 
   # Install firefox.
   # programs.firefox.enable = true;
@@ -123,9 +129,8 @@ in
    pkgsUnstable.gh
    pkgs.bluez
    pkgs.blueman
+   pkgsUnstable.tree-sitter
    pkgs.wget
-   pkgsUnstable.ruby
-   pkgsUnstable.sublime4
    pkgsUnstable.tmux
    pkgsUnstable.busybox
    pkgsUnstable.toybox
