@@ -86,13 +86,6 @@ in
     #media-session.enable = true;
   };
 
-  programs.neovim = {
-    enable = true;
-    defaultEditor = true;
-    viAlias = true;
-    vimAlias = true;
-  };
-
   programs.nix-ld.enable = true;
 
   # Enable touchpad support (enabled default in most desktopManager).
@@ -131,7 +124,8 @@ in
    pkgs.bluez
    pkgs.blueman
    pkgs.wget
-   pkgsUnstable.tree-sitter
+   pkgsUnstable.ruby
+   pkgsUnstable.sublime4
    pkgsUnstable.tmux
    pkgsUnstable.busybox
    pkgsUnstable.toybox
